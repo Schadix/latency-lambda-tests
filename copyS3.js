@@ -1,4 +1,5 @@
 var AWS = require('aws-sdk');
+var s3 = new AWS.S3();
 
 module.exports = function(host, port) {
 	var l = require('latency-lambda-client')(host, port);
